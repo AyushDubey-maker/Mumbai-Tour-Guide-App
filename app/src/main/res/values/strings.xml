@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tour Guide</string>
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="more_info">More Information</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="places_to_eat">Places You Can Eat</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="places_visit">Places You Can Visit</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="places_to_stay">Places You Can Stay</string>
+</resources>

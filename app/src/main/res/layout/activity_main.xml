@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.example.tourguide.MainActivity">
+
+    <!-- Numbers category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/places_visit"
+        >
+
+        <TextView
+            android:id="@+id/placeVisit"
+            style="@style/CategoryStyle"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="getPlacesToVisit"
+            android:text="@string/places_visit" />
+    </FrameLayout>
+
+    <!-- Family category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/places_to_stay"
+       >
+        <TextView
+            android:id="@+id/stayPlace"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/places_to_stay"
+            android:onClick="getPlacesToStay"
+            android:layout_height="match_parent"
+          />
+    </FrameLayout>
+
+    <!-- Colors category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/places_to_eat">
+        <TextView
+            android:id="@+id/eatPlace"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/places_to_eat"
+            android:onClick="getPlacesToEat"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- Phrases category -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@color/more_info">
+
+        <TextView
+            android:id="@+id/moreinfo"
+            style="@style/CategoryStyle"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="getMoreInfo"
+            android:text="@string/more_info" />
+    </FrameLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        tools:context="com.vlemonn.java.blog.htextview.MainActivity">
+
+
+        <TextView
+            android:id="@+id/textViewFade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Take a Virtual Tour Of Mumbai"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textColor="@color/places_visit"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/tour_img"/>
+</LinearLayout>
